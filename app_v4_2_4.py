@@ -311,8 +311,7 @@ with tab_show:
 
     with st.sidebar:
         st.header("Create distributions")
-               run = st.button("Generate / Update")
-
+        run = st.button("Generate / Update")
         st.header("Global Settings")
         seed = st.number_input("Random seed", min_value=0, max_value=2**31-1, value=42, step=1)
         # Keep integer type; no float format to avoid Streamlit warning
