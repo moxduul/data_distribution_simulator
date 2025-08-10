@@ -8,7 +8,7 @@ from scipy import stats
 from scipy.stats import anderson
 import ast, textwrap, re
 
-st.set_page_config(page_title="Data Distribution Simulator", layout="wide")
+st.set_page_config(page_title="Data Distribution Simulator 2.4.2", layout="wide")
 
 # ---------- App header ----------
 st.title("Data Distribution Simulator")
