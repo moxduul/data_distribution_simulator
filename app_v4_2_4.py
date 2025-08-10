@@ -11,9 +11,8 @@ import ast, textwrap, re
 st.set_page_config(page_title="Data Distribution Simulator 2.4.2", layout="wide")
 
 # ---------- App header ----------
-st.title("Data Distribution Simulator TEST")
-st.caption("Generate, transform, and combine distributions. Inspect normality (Shapiro/D’Agostino), "
-           "Anderson–Darling, histograms with bell-curve overlays, and Q–Q plots.")
+st.title("Data Distribution Simulator")
+st.caption("Dear Dr. Gra**i, use this cool app to Generate, transform, and combine distributions.")
 
 # ---------- Constants ----------
 DIST_TYPES = ["Normal", "Uniform", "Lognormal", "Weibull", "Student's t"]
@@ -312,6 +311,8 @@ with tab_show:
 
     with st.sidebar:
         st.header("Create distributions")
+               run = st.button("Generate / Update")
+
         st.header("Global Settings")
         seed = st.number_input("Random seed", min_value=0, max_value=2**31-1, value=42, step=1)
         # Keep integer type; no float format to avoid Streamlit warning
@@ -382,8 +383,7 @@ with tab_show:
             dist, params, low, high = dist_controls(label, defaults[label])
             choices[label] = {"type": dist, "params": params, "low": low, "high": high}
 
-        run = st.button("Generate / Update")
-
+        
     if run:
         rng = np.random.default_rng(int(seed))
 
