@@ -11,7 +11,7 @@ import ast, textwrap, re
 st.set_page_config(page_title="Data Distribution Simulator 2.4.2", layout="wide")
 
 # ---------- App header ----------
-st.title("Data Distribution Simulator")
+st.title("Data Distribution Simulator TEST")
 st.caption("Generate, transform, and combine distributions. Inspect normality (Shapiro/D’Agostino), "
            "Anderson–Darling, histograms with bell-curve overlays, and Q–Q plots.")
 
