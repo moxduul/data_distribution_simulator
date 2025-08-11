@@ -12,9 +12,7 @@ st.set_page_config(page_title="Data Distribution Simulator", layout="wide")
 
 # ---------- App header ----------
 st.title("Data Distribution Simulator (4.2.6)")
-st.caption("Ciao Dr. Gr***i!!!")
-st.caption("Use this cool app to generate, transform, and combine distributions.")
-st.caption("Will normal data after transformation be still normal?")
+st.caption("Generate, transform, and combine distributions.")
 
 # --- UI polish: highlight tabs ---
 st.markdown("""
